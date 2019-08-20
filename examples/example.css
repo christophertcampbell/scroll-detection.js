@@ -1,0 +1,204 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: #333;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+
+.content {
+	margin-top: 64px;
+	padding: 1em 2em;
+}
+
+@media screen and (min-width: 800px) {
+	.content {
+		position: fixed;
+		top: 0px;
+		bottom :0;
+		left: 0;
+		right: 0;
+	}
+}
+
+.percent-read-indicator {
+	background-color: #efefef;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 4px;
+}
+
+.percent-read-indicator .bar {
+	background-color: red;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	transition: width 150ms;
+}
+
+.sticky-indicator {
+	display: flex;
+	position: fixed;
+	top: 4px;
+	height: 30px;
+	left: 0;
+	right: 0;
+}
+
+.sticky-indicator div {
+	background-color: #efefef;
+	border: 1px solid #ccc;
+	display: inline-block;
+	line-height: 30px;
+	text-align: center;
+	flex: 1;
+}
+
+.sticky-indicator + .sticky-indicator div {
+	border-top: 0;
+}
+
+.sticky-indicator.percent {
+	top: 4px;
+}
+
+.sticky-indicator.pixel {
+	top: 34px;
+}
+
+.vert-spacer {
+	height: 200vh;
+}
+
+@media screen and (min-width: 800px) {
+	.vert-spacer {
+		height: 500vh;
+	}
+}
+
+.scrolled-pct-1 .percent-read-indicator .bar { width: 1%; }
+.scrolled-pct-2 .percent-read-indicator .bar { width: 2%; }
+.scrolled-pct-3 .percent-read-indicator .bar { width: 3%; }
+.scrolled-pct-4 .percent-read-indicator .bar { width: 4%; }
+.scrolled-pct-5 .percent-read-indicator .bar { width: 5%; }
+.scrolled-pct-6 .percent-read-indicator .bar { width: 6%; }
+.scrolled-pct-7 .percent-read-indicator .bar { width: 7%; }
+.scrolled-pct-8 .percent-read-indicator .bar { width: 8%; }
+.scrolled-pct-9 .percent-read-indicator .bar { width: 9%; }
+.scrolled-pct-10 .percent-read-indicator .bar { width: 10%; }
+.scrolled-pct-11 .percent-read-indicator .bar { width: 11%; }
+.scrolled-pct-12 .percent-read-indicator .bar { width: 12%; }
+.scrolled-pct-13 .percent-read-indicator .bar { width: 13%; }
+.scrolled-pct-14 .percent-read-indicator .bar { width: 14%; }
+.scrolled-pct-15 .percent-read-indicator .bar { width: 15%; }
+.scrolled-pct-16 .percent-read-indicator .bar { width: 16%; }
+.scrolled-pct-17 .percent-read-indicator .bar { width: 17%; }
+.scrolled-pct-18 .percent-read-indicator .bar { width: 18%; }
+.scrolled-pct-19 .percent-read-indicator .bar { width: 19%; }
+.scrolled-pct-20 .percent-read-indicator .bar { width: 20%; }
+.scrolled-pct-21 .percent-read-indicator .bar { width: 21%; }
+.scrolled-pct-22 .percent-read-indicator .bar { width: 22%; }
+.scrolled-pct-23 .percent-read-indicator .bar { width: 23%; }
+.scrolled-pct-24 .percent-read-indicator .bar { width: 24%; }
+.scrolled-pct-25 .percent-read-indicator .bar { width: 25%; }
+.scrolled-pct-26 .percent-read-indicator .bar { width: 26%; }
+.scrolled-pct-27 .percent-read-indicator .bar { width: 27%; }
+.scrolled-pct-28 .percent-read-indicator .bar { width: 28%; }
+.scrolled-pct-29 .percent-read-indicator .bar { width: 29%; }
+.scrolled-pct-30 .percent-read-indicator .bar { width: 30%; }
+.scrolled-pct-31 .percent-read-indicator .bar { width: 31%; }
+.scrolled-pct-32 .percent-read-indicator .bar { width: 32%; }
+.scrolled-pct-33 .percent-read-indicator .bar { width: 33%; }
+.scrolled-pct-34 .percent-read-indicator .bar { width: 34%; }
+.scrolled-pct-35 .percent-read-indicator .bar { width: 35%; }
+.scrolled-pct-36 .percent-read-indicator .bar { width: 36%; }
+.scrolled-pct-37 .percent-read-indicator .bar { width: 37%; }
+.scrolled-pct-38 .percent-read-indicator .bar { width: 38%; }
+.scrolled-pct-39 .percent-read-indicator .bar { width: 39%; }
+.scrolled-pct-40 .percent-read-indicator .bar { width: 40%; }
+.scrolled-pct-41 .percent-read-indicator .bar { width: 41%; }
+.scrolled-pct-42 .percent-read-indicator .bar { width: 42%; }
+.scrolled-pct-43 .percent-read-indicator .bar { width: 43%; }
+.scrolled-pct-44 .percent-read-indicator .bar { width: 44%; }
+.scrolled-pct-45 .percent-read-indicator .bar { width: 45%; }
+.scrolled-pct-46 .percent-read-indicator .bar { width: 46%; }
+.scrolled-pct-47 .percent-read-indicator .bar { width: 47%; }
+.scrolled-pct-48 .percent-read-indicator .bar { width: 48%; }
+.scrolled-pct-49 .percent-read-indicator .bar { width: 49%; }
+.scrolled-pct-50 .percent-read-indicator .bar { width: 50%; }
+.scrolled-pct-51 .percent-read-indicator .bar { width: 51%; }
+.scrolled-pct-52 .percent-read-indicator .bar { width: 52%; }
+.scrolled-pct-53 .percent-read-indicator .bar { width: 53%; }
+.scrolled-pct-54 .percent-read-indicator .bar { width: 54%; }
+.scrolled-pct-55 .percent-read-indicator .bar { width: 55%; }
+.scrolled-pct-56 .percent-read-indicator .bar { width: 56%; }
+.scrolled-pct-57 .percent-read-indicator .bar { width: 57%; }
+.scrolled-pct-58 .percent-read-indicator .bar { width: 58%; }
+.scrolled-pct-59 .percent-read-indicator .bar { width: 59%; }
+.scrolled-pct-60 .percent-read-indicator .bar { width: 60%; }
+.scrolled-pct-61 .percent-read-indicator .bar { width: 61%; }
+.scrolled-pct-62 .percent-read-indicator .bar { width: 62%; }
+.scrolled-pct-63 .percent-read-indicator .bar { width: 63%; }
+.scrolled-pct-64 .percent-read-indicator .bar { width: 64%; }
+.scrolled-pct-65 .percent-read-indicator .bar { width: 65%; }
+.scrolled-pct-66 .percent-read-indicator .bar { width: 66%; }
+.scrolled-pct-67 .percent-read-indicator .bar { width: 67%; }
+.scrolled-pct-68 .percent-read-indicator .bar { width: 68%; }
+.scrolled-pct-69 .percent-read-indicator .bar { width: 69%; }
+.scrolled-pct-70 .percent-read-indicator .bar { width: 70%; }
+.scrolled-pct-71 .percent-read-indicator .bar { width: 71%; }
+.scrolled-pct-72 .percent-read-indicator .bar { width: 72%; }
+.scrolled-pct-73 .percent-read-indicator .bar { width: 73%; }
+.scrolled-pct-74 .percent-read-indicator .bar { width: 74%; }
+.scrolled-pct-75 .percent-read-indicator .bar { width: 75%; }
+.scrolled-pct-76 .percent-read-indicator .bar { width: 76%; }
+.scrolled-pct-77 .percent-read-indicator .bar { width: 77%; }
+.scrolled-pct-78 .percent-read-indicator .bar { width: 78%; }
+.scrolled-pct-79 .percent-read-indicator .bar { width: 79%; }
+.scrolled-pct-80 .percent-read-indicator .bar { width: 80%; }
+.scrolled-pct-81 .percent-read-indicator .bar { width: 81%; }
+.scrolled-pct-82 .percent-read-indicator .bar { width: 82%; }
+.scrolled-pct-83 .percent-read-indicator .bar { width: 83%; }
+.scrolled-pct-84 .percent-read-indicator .bar { width: 84%; }
+.scrolled-pct-85 .percent-read-indicator .bar { width: 85%; }
+.scrolled-pct-86 .percent-read-indicator .bar { width: 86%; }
+.scrolled-pct-87 .percent-read-indicator .bar { width: 87%; }
+.scrolled-pct-88 .percent-read-indicator .bar { width: 88%; }
+.scrolled-pct-89 .percent-read-indicator .bar { width: 89%; }
+.scrolled-pct-90 .percent-read-indicator .bar { width: 90%; }
+.scrolled-pct-91 .percent-read-indicator .bar { width: 91%; }
+.scrolled-pct-92 .percent-read-indicator .bar { width: 92%; }
+.scrolled-pct-93 .percent-read-indicator .bar { width: 93%; }
+.scrolled-pct-94 .percent-read-indicator .bar { width: 94%; }
+.scrolled-pct-95 .percent-read-indicator .bar { width: 95%; }
+.scrolled-pct-96 .percent-read-indicator .bar { width: 96%; }
+.scrolled-pct-97 .percent-read-indicator .bar { width: 97%; }
+.scrolled-pct-98 .percent-read-indicator .bar { width: 98%; }
+.scrolled-pct-99 .percent-read-indicator .bar { width: 99%; }
+.scrolled-pct-100 .percent-read-indicator .bar { width: 100%; }
+
+.scrolled-pct-25 .pct25,
+.scrolled-pct-50 .pct50,
+.scrolled-pct-75 .pct75,
+.scrolled-pct-100 .pct100 {
+	background-color: #b9ffb4;
+	font-weight: 500;
+}
+
+.scrolled-50 .px50,
+.scrolled-100 .px100,
+.scrolled-150 .px150,
+.scrolled-200 .px200,
+.scrolled-300 .px300,
+.scrolled-400 .px400,
+.scrolled-500 .px500,
+.scrolled-600 .px600,
+.scrolled-700 .px700 {
+	background-color: #ffdbdb;
+	font-weight: 500;
+}

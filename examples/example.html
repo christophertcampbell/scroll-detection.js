@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>ScrollDetection.js Example</title>
+	<link rel="stylesheet" href="example.css">
+</head>
+<body>
+	<div class="percent-read-indicator">
+		<div class="bar"></div>
+	</div>
+	<div class="sticky-indicator percent">
+		<div>Percent: </div>
+		<div class="pct25">25%</div>
+		<div class="pct50">50%</div>
+		<div class="pct75">75%</div>
+		<div class="pct100">100%</div>
+	</div>
+	<div class="sticky-indicator pixel">
+			<div>Pixel: </div>
+			<div class="px100">100px</div>
+			<div class="px300">300px</div>
+			<div class="px500">500px</div>
+			<div class="px700">700px</div>
+		</div>
+	<main class="content">
+		<h1>ScrollDetection.js</h1>
+		<h2>Examples</h2>
+		<p>This is an example of how ScrollDetection.js () works.</p>
+		<p>Scroll down the page to see the following in action:</p>
+		<ul>
+			<li>Percentage bar at top will use percent-based body classes to indicate how much of the document has been viewed.</li>
+			<li>Percent and pixel indicators will reflext which "sticky" body classes have been added.</li>
+		</ul>
+	</main>
+	<div class="vert-spacer">&nbsp;</div>
+	<script src="../src/scroll-detection.js"></script>
+	<script>
+		var config = window.ScrollDetection.getConfig();
+		config.pixel.stickyDistances = [50, 100, 150, 200, 300, 400, 500, 600, 700];
+		window.ScrollDetection.setConfig(config);
+	</script>
+</body>
+</html>
