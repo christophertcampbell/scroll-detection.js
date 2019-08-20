@@ -1,6 +1,8 @@
 /**
  * ScrollDetection.js
  * 
+ * Version: v0.2
+ * 
  * Detects browser scroll amount and applies pixel/percent-based css classes
  * to the <body> element based on distance scrolled
  * 
