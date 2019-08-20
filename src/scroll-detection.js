@@ -82,7 +82,8 @@
 		}
 	
 		function getDistanceScrolled() {
-			return window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop
+			var rawScrollValue = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
+			return Math.round(rawScrollValue);
 		}
 	
 		function getPercentScrolled() {
