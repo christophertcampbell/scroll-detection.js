@@ -115,7 +115,7 @@
 
 		return {
 			getConfig: getConfig,
-			setconfig: setConfig
+			setConfig: setConfig
 		}
 
 	}
