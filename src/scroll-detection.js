@@ -17,6 +17,9 @@
 ( function() {
 
 	function ScrollDetection() {
+		
+		var body = document.querySelector("body");
+		var maxPixelScrollDistanceToWatch;
 
 		var config = {
 			pixel: {
@@ -28,9 +31,12 @@
 				stickyDistances: [25, 50, 75]
 			}
 		}
+
+		// Run one time on first load
+		calculateMaxPixelScrollDistanceToWatch();
+		addBodyClasses();
 	
 		// Max pixel distance to watch for applying pixel-based scroll classes
-		var maxPixelScrollDistanceToWatch;
 		function calculateMaxPixelScrollDistanceToWatch() {
 			maxPixelScrollDistanceToWatch = Math.max(config.pixel.singleClassesUntil, Math.max.apply(null, config.pixel.stickyDistances));
 		}
@@ -39,7 +45,6 @@
 		window.addEventListener("scroll", addBodyClasses, false);
 		window.addEventListener("resize", addBodyClasses, false);
 	
-		var body = document.querySelector("body");
 		
 		function addBodyClasses() {
 			var distanceScrolled = getDistanceScrolled();
